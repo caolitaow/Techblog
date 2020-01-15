@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https:&#x2F;&#x2F;www.caolitao.com&#x2F;imgs&#x2F;hexo_fileflow.JPG">
 <meta property="article:published_time" content="2019-12-20T03:48:02.000Z">
-<meta property="article:modified_time" content="2019-12-27T09:23:49.737Z">
+<meta property="article:modified_time" content="2020-01-15T08:31:48.046Z">
 <meta property="article:author" content="caolitao">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -189,38 +189,25 @@
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;repository&gt; themes/&lt;theme-name&gt;</span><br></pre></td></tr></table></figure>
 
 <p>​       说白了就是在github上克隆一个主题到本地，<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">hexo主题仓库</a>地址</p>
+<p>​    2.主题文件下也有一个配置文件_config.yml，你可以修改该配置文件达到个性化的目的</p>
+<p>​        具体如何个性化请参见<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="noopener">不如</a></p>
+<p>​    3.进入主题文件夹下，执行如下命令，将主题更新为刚刚下的主题或刚刚修改后的主题：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/dream</span><br><span class="line">     git pull</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
-</ul>
-<pre><code>​    2.主题文件下也有一个配置文件_config.yml，你可以修改该配置文件达到个性化的目的
-
-​        具体如何个性化请参见[不如](http://ibruce.info/2013/11/22/hexo-your-blog/)
-
-
-
-​    3.进入主题文件夹下，执行如下命令，将主题更新为刚刚下的主题或刚刚修改后的主题：
-
-​    
-
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/dream</span><br><span class="line">  git pull</span><br></pre></td></tr></table></figure></code></pre><p>   ​        </p>
-<ul>
 <li><p>公益404页面</p>
-<p>  ​    在Github Pages仓库上自定义404页面很容易，直接在根目录下source里新建404.html即可</p>
-<pre><code>可以在html body中嵌入以下代码就能将博客网站的404页面变成帮助宝贝回家的公益页面：</code></pre><p>​            </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"</span> </span></span><br><span class="line"><span class="tag"><span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"https://www.caolitao.com"</span> <span class="attr">homePageName</span>=</span></span><br><span class="line"><span class="tag">"回到我的主页"&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-</li>
+<pre><code>在Github Pages仓库上自定义404页面很容易，直接在根目录下source里新建404.html即可，可以在html body中嵌入以下代码就能将博客网站的404页面变成帮助宝贝回家的公益页面：</code></pre></li>
 </ul>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="一、hexo-g只负责用你选择的主题去渲染你的博客原文-md文件，不负责生成CNAME-即当你在github上保存好域名，生成CNAME文件后，运行hexo-g；hexo-d它将把生成的CNAME删除掉，导致买的域名解析失败"><a href="#一、hexo-g只负责用你选择的主题去渲染你的博客原文-md文件，不负责生成CNAME-即当你在github上保存好域名，生成CNAME文件后，运行hexo-g；hexo-d它将把生成的CNAME删除掉，导致买的域名解析失败" class="headerlink" title="一、hexo g只负责用你选择的主题去渲染你的博客原文.md文件，不负责生成CNAME,即当你在github上保存好域名，生成CNAME文件后，运行hexo g；hexo d它将把生成的CNAME删除掉，导致买的域名解析失败"></a>一、hexo g只负责用你选择的主题去渲染你的博客原文.md文件，不负责生成CNAME,即当你在github上保存好域名，生成CNAME文件后，运行hexo g；hexo d它将把生成的CNAME删除掉，导致买的域名解析失败</h3><ul>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; 
+charset=&quot;utf-8&quot; homePageUrl=&quot;https://www.caolitao.com&quot; homePageName=
+&quot;回到我的主页&quot;&gt;&lt;/script&gt;</code></pre><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="一、hexo-g只负责用你选择的主题去渲染你的博客原文-md文件，不负责生成CNAME-即当你在github上保存好域名，生成CNAME文件后，运行hexo-g；hexo-d它将把生成的CNAME删除掉，导致买的域名解析失败"><a href="#一、hexo-g只负责用你选择的主题去渲染你的博客原文-md文件，不负责生成CNAME-即当你在github上保存好域名，生成CNAME文件后，运行hexo-g；hexo-d它将把生成的CNAME删除掉，导致买的域名解析失败" class="headerlink" title="一、hexo g只负责用你选择的主题去渲染你的博客原文.md文件，不负责生成CNAME,即当你在github上保存好域名，生成CNAME文件后，运行hexo g；hexo d它将把生成的CNAME删除掉，导致买的域名解析失败"></a>一、hexo g只负责用你选择的主题去渲染你的博客原文.md文件，不负责生成CNAME,即当你在github上保存好域名，生成CNAME文件后，运行hexo g；hexo d它将把生成的CNAME删除掉，导致买的域名解析失败</h3><ul>
 <li>解决方法：</li>
 </ul>
 <blockquote>
-<p>在新建仓库，不要急着将买的域名保存为自定义的域名，可以在执行hexo d前在根目录下的source里新建CNAME文 件，写上自己买的域名，<u>因为在source目录下，只有_posts里的内容才被渲染成html在网站上显示其他文件都是不做渲染直接被推送到远程仓库中的</u></p>
+<p>在新建仓库，不要急着将买的域名保存为自定义的域名，可以在执行hexo d前在根目录下的source里新建CNAME文 件，写上自己买的域名，<u>因为在source目录下，只有_posts里的内容才被渲染成html在网站上显示其他文件都是不做渲染直接被推送到远程仓库中的</u>若远程仓库中已有CNAME，则删除该文件，重复步骤1即可</p>
 </blockquote>
-<pre><code>若远程仓库中已有CNAME，则删除该文件，重复步骤1即可</code></pre><h3 id="二、任何对主题配置文件-config-yml修改都需要在该主题目录下执行git-pull，然后重新生成，部署才能让更改生效，对hexo根目录下的-config-yml修改也得重新生成，部署才能生效"><a href="#二、任何对主题配置文件-config-yml修改都需要在该主题目录下执行git-pull，然后重新生成，部署才能让更改生效，对hexo根目录下的-config-yml修改也得重新生成，部署才能生效" class="headerlink" title="二、任何对主题配置文件_config.yml修改都需要在该主题目录下执行git pull，然后重新生成，部署才能让更改生效，对hexo根目录下的 _config.yml修改也得重新生成，部署才能生效"></a>二、任何对主题配置文件_config.yml修改都需要在该主题目录下执行git pull，然后重新生成，部署才能让更改生效，对hexo根目录下的 _config.yml修改也得重新生成，部署才能生效</h3><h3 id="三、被-hexo-init-初始化的目录结构："><a href="#三、被-hexo-init-初始化的目录结构：" class="headerlink" title="三、被 hexo init 初始化的目录结构："></a>三、被 hexo init 初始化的目录结构：</h3><p>​            deploy_git：远程仓库的本地库</p>
+<h3 id="二、任何对主题配置文件-config-yml修改都需要在该主题目录下执行git-pull，然后重新生成，部署才能让更改生效，对hexo根目录下的-config-yml修改也得重新生成，部署才能生效"><a href="#二、任何对主题配置文件-config-yml修改都需要在该主题目录下执行git-pull，然后重新生成，部署才能让更改生效，对hexo根目录下的-config-yml修改也得重新生成，部署才能生效" class="headerlink" title="二、任何对主题配置文件_config.yml修改都需要在该主题目录下执行git pull，然后重新生成，部署才能让更改生效，对hexo根目录下的 _config.yml修改也得重新生成，部署才能生效"></a>二、任何对主题配置文件_config.yml修改都需要在该主题目录下执行git pull，然后重新生成，部署才能让更改生效，对hexo根目录下的 _config.yml修改也得重新生成，部署才能生效</h3><h3 id="三、被-hexo-init-初始化的目录结构："><a href="#三、被-hexo-init-初始化的目录结构：" class="headerlink" title="三、被 hexo init 初始化的目录结构："></a>三、被 hexo init 初始化的目录结构：</h3><p>​            deploy_git：远程仓库的本地库</p>
 <p>​            public：存放生成的静态页面，和其他普通文件/文件夹，其整个内容都与source里的内容对应</p>
 <p>​            scaffolds：存放layout 布局文件，默认有三个布局文件，当然你也可以仿照已有的新建布局文件，通过hexo new [layout]  “filename” 可以快速创建一定格式的md文件（用默认的就好了，省得麻烦）</p>
 <p>​            source：部署到远程仓库的初始文件夹，其中_posts为博客原文文件夹</p>
